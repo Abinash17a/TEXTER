@@ -21,7 +21,7 @@ const[alert,setAlert] = useState(null);
   setTimeout(()=>{
     setAlert(null);
 
-  },32000)
+  },1500)
  }
 const toggleMode=()=>{
   if(mode ==='light'){
@@ -35,23 +35,23 @@ else{
   showAlert("Lightmode has been enabled","success");
 }
 }
-const togmode=()=>{
-  if(mode==='light'){
-    setMode('dark');
-    document.body.style.backgroundColor='#005ea6';
-    showAlert("bluemode has been enabled","success");
-  }
-  else{
-    setMode('light');
-    document.body.style.backgroundColor='white';
-    showAlert("Lightmode has been enabled","success");
-  }
-}
+// const togmode=()=>{
+//   if(mode==='light'){
+//     setMode('dark');
+//     document.body.style.backgroundColor='#005ea6';
+//     showAlert("bluemode has been enabled","success");
+//   }
+//   else{
+//     setMode('light');
+//     document.body.style.backgroundColor='white';
+//     showAlert("Lightmode has been enabled","success");
+//   }
+// }
   return (
 
    <>
    {/* <Router> */}
-   <Navbar title="TexTer" mode={mode} toggleMode={toggleMode} togmode={togmode}/>
+   <Navbar title="TexTer" mode={mode} toggleMode={toggleMode} />
    <Alert alert={alert}/>
    <br></br>
    <div className='container my-3'>
