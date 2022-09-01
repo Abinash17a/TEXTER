@@ -36,7 +36,7 @@ const[text,setText]=useState('Enter text here');
     <>
     <div className='container' style={{color:props.mode==='dark'?'white':'black'}}>
         <div className="mb-3">
-        <label htmlFor="box" className="form-label">{props.titlehead}</label>
+        <label htmlFor="box" className="form-label"><h2>{props.titlehead}</h2></label>
         <textarea className="form-control" value={text} onChange={handleOnChange} style={{backgroundColor:props.mode==='dark'?'#00001a':'white',color:props.mode==='dark'?'white':'black'}} id="mybox" rows="5"></textarea>'
         <button className="btn btn-primary my-3 mx-2" onClick={handleUpClick}>Convert to Uppercase</button>
         <button className="btn btn-primary my-3 mx-2" onClick={handledownClick}>Convert to Lowercase</button>

@@ -60,7 +60,7 @@ else{
             {/* <Route exact path="/About" element={<About/>}></Route> */}
             {/* <Route exact path="/"  */}
             {/* element={ */}
-            <Forms titlehead="Enter text "mode={mode} 
+            <Forms titlehead="Enter text " mode={mode} 
               showAlert={showAlert} />
               {/* } */}
               {/* ></Route> */}
