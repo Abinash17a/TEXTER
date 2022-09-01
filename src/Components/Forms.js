@@ -50,7 +50,7 @@ const[text,setText]=useState('Enter text here');
         <p>{text.split(" ").filter((element)=>{ return element.length!==0 }).length} words and {text.length} character</p>
         <p>time required to read the text{0.008*text.split(" ").length}miniutes</p>
 
-        <p>Preview{text.length>0?text:"Enter any text to preview it here"}</p>
+        <p>Preview: {text.length>0?text:"Enter any text to preview it here"}</p>
     </div>
     </div>
     </>
